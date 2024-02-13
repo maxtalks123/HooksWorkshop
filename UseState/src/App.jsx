@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "./App.css";
 import Cookie from "./Cookie";
+import DisappearButton from "./Components/DisappearButton";
 
 export default function App() {
   const [myState, SetMyState] = useState(0);
@@ -18,6 +19,7 @@ export default function App() {
   }
   return (
     <div>
+      <DisappearButton />
       <Cookie />
       <p onClick={resetState}>{myState} Cookies!</p>
       <button onClick={incrementState}>Click to get more cookies</button>
