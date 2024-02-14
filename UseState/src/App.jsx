@@ -2,6 +2,7 @@ import { useState } from "react";
 import "./App.css";
 import Cookie from "./Cookie";
 import DisappearButton from "./Components/DisappearButton";
+import CookieShop from "./Components/CookieShop";
 
 export default function App() {
   const [myState, SetMyState] = useState(0);
@@ -26,6 +27,7 @@ export default function App() {
 
       <button onClick={decrementState}>Click to get one less cookie</button>
       <button onClick={resetState}>Reset button</button>
+      <CookieShop />
     </div>
   );
 }
